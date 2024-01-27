@@ -2,23 +2,23 @@
 
 This web app allows users to easily split a bill, including tip, among a specified number of people.
 
-### Features
+## Features
 
 - Split a bill among a specified number of people.
 - Include a tip percentage in the calculation.
 - Responsive design using Tailwind CSS.
 - Built with Next.js for a fast and efficient web experience.
 
-### Demo
+## Demo
 
-Include a link to a live demo of your web app if applicable.
+Check out the live demo [here](https://bill-splitter-app-nine.vercel.app/).
 
-### Installation
+## Installation
 
 1. Clone the repository:
 
    ```
-   git clone https://github.com/yourusername/bill-splitter-app.git
+   git clone https://github.com/Darkx-dev/bill-splitter-app.git
    ```
 
 2. Navigate to the project folder:
@@ -32,8 +32,12 @@ Include a link to a live demo of your web app if applicable.
    ```
    npm install
    ```
+   or 
+   ```
+   npm i
+   ```
 
-### Usage
+## Usage
 
 1. Start the development server:
 
@@ -45,18 +49,17 @@ Include a link to a live demo of your web app if applicable.
 
 3. Use the app to split bills with ease!
 
-### Configuration
+## Configuration
 
 Adjust the configuration settings in the code, such as default tip percentage or any other customization options.
 
-### Acknowledgments
 
-Give credit to any external libraries, resources, or inspirations you used in your project.
+## Acknowledgments
 
-### Contact
+- Design and asset provided by [Frontend Mentor](https://www.frontendmentor.io).
+
+## Contact
 
 If you have any questions or suggestions, feel free to reach out to [your email address].
 
 ---
-
-Feel free to further customize this template as needed. Now, each section is enclosed between triple backticks for easy copying.
