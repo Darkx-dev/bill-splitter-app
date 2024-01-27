@@ -2,32 +2,115 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --Verydarkcyan: hsl(183, 100%, 15%);
+  --Verydarkcyan2:rgb(23, 88, 92);
+  --Darkgrayishcyan: hsl(186, 14%, 43%);
+  --Grayishcyan: hsl(184, 14%, 56%);
+  --Lightgrayishcyan: hsl(185, 41%, 84%);
+  --Verylightgrayishcyan: hsl(189, 41%, 97%);
+  --White: hsl(0, 0%, 100%);
+  --Strongcyan: hsl(172, 67%, 45%);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+* {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+#main {
+  background: var(--Lightgrayishcyan);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+img.icon {
+  position: absolute;
+  bottom: 12px;
+  left: 15px;
+}
+
+input {
+  text-align: right;
+  padding: 0.5rem 1.5rem;
+  width: 100%;
+  background-color: var(--Verylightgrayishcyan);
+}
+
+button {
+  box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.181);
+  border-radius: 5px;
+  padding: 0.5rem 1.5rem;
+  width: 100%;
+  transition: all 0.2s;
+  background: var(--Verydarkcyan2);
+}
+
+button:hover {
+  background-color: #f7f4fa;
+  color: black;
+}
+button:active {
+  background-color: #bfbbbb;
+  color: rgb(65, 64, 64);
+}
+
+.input-active {
+  border: 1px solid var(--Darkgrayishcyan);
+}
+
+.result {
+  width: 100%;
+  background-color: var(--Verydarkcyan);
+  display: grid;
+  gap: 1.2rem;
+  color: #f7f4fa;
+  border-radius: 10px;
+}
+
+.tip-percent,
+.custom-tip-percent {
+  font-size: 1.5rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+  width: 100%;
+  transition: 0.2s;
+}
+
+.tip-percent:hover {
+  background: var(--Strongcyan);
+  color: white;
+}
+.tip-percent {
+  background-color: var(--Verydarkcyan);
+  color: #ffffff;
+}
+
+.custom-tip-percent {
+  background: var(--Verylightgrayishcyan);
+}
+
+.custom-tip-percent input {
+  padding: 0 0px;
+  text-align: center;
+}
+
+span#answer1 , span#answer2 {
+  font-size: 2rem;
+  color: var(--Strongcyan);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+  appearance: none;
 }
