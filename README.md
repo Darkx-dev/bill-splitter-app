@@ -60,6 +60,6 @@ Adjust the configuration settings in the code, such as default tip percentage or
 
 ## Contact
 
-If you have any questions or suggestions, feel free to reach out to [your email address].
+If you have any questions or suggestions, feel free to reach out to [darkx.dev.23@gmail.com].
 
 ---
