@@ -14,14 +14,14 @@ export default function Result(params: any) {
       <div className="flex justify-between items-center" id="result">
         <span>
           Tip Amount <br />
-          <span className="text-xs">/ person</span>
+          <span className="text-xs text-slate-400 font-light">/ person</span>
         </span>
         <span id="answer1">{params.tipAmount}$</span>
       </div>
       <div className="flex justify-between items-center">
         <span>
           Total Amount <br />
-          <span className="text-xs">/ person</span>
+          <span className="text-xs text-slate-400 font-light">/ person</span>
         </span>
         <span id="answer2">{params.actualAmount}$</span>
       </div>
