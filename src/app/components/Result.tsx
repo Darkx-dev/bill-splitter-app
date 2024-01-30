@@ -2,14 +2,19 @@ import React from "react";
 import { useState } from "react";
 
 export default function Result(params: any) {
-  const [totalTip, setTotalTip] = useState(0)
-  const [totalAmount, setTotalAmount] = useState(0)
+  const data: any = {
+    bill: params.bill,
+    tip: params.tip,
+    heads: params.heads
+  };
+  const [totalTip, setTotalTip] = useState(0);
+  const [totalAmount, setTotalAmount] = useState(0);
   const handleCalculation = () => {
-    console.log("handleCalculation")
-  }
-  const handleReset = () => {
-    console.log("handleReset")
-  }
+    let tipAmount = Math.floor((params.bill * (params.tip / 100)) / params.heads);
+    setTotalTip(tipAmount);
+    let actualAmount = Math.floor(params.bill / params.heads);
+    setTotalAmount(actualAmount);
+  };
   return (
     <>
       <div className="flex justify-between items-center" id="result">
@@ -27,8 +32,12 @@ export default function Result(params: any) {
         <span id="answer2">{totalAmount}$</span>
       </div>
       <div className="mt-5 flex flex-col gap-8">
-        <button id="calc" onClick={handleCalculation}>CALCULATE</button>
-        <button id="reset" onClick={handleReset}>RESET</button>
+        <button id="calc" onClick={handleCalculation}>
+          CALCULATE
+        </button>
+        <button id="reset" onClick={params.reset}>
+          RESET
+        </button>
       </div>
     </>
   );
