@@ -8,6 +8,7 @@ export default function Input(params: any) {
     <div className="relative">
       <img src={params.src} alt="" className="icon" />
       <input
+        onChange={params.onChange}
         type="number"
         id="bill"
         className="shadow-md"

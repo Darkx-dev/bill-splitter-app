@@ -6,7 +6,7 @@
 
 :root {
   --Verydarkcyan: hsl(183, 100%, 15%);
-  --Verydarkcyan2:rgb(23, 88, 92);
+  --Verydarkcyan2: rgb(23, 88, 92);
   --Darkgrayishcyan: hsl(186, 14%, 43%);
   --Grayishcyan: hsl(184, 14%, 56%);
   --Lightgrayishcyan: hsl(185, 41%, 84%);
@@ -53,6 +53,7 @@ button:hover {
   background-color: #f7f4fa;
   color: black;
 }
+
 button:active {
   background-color: #bfbbbb;
   color: rgb(65, 64, 64);
@@ -84,6 +85,7 @@ button:active {
   background: var(--Strongcyan);
   color: white;
 }
+
 .tip-percent {
   background-color: var(--Verydarkcyan);
   color: #ffffff;
@@ -98,19 +100,12 @@ button:active {
   text-align: center;
 }
 
-span#answer1 , span#answer2 {
+span#answer1,
+span#answer2 {
   font-size: 2rem;
   color: var(--Strongcyan);
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
-  appearance: none;
+input:checked + .tip-percent {
+  background-color: var(--Strongcyan);
 }
