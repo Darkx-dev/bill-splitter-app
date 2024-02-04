@@ -58,6 +58,10 @@ Adjust the configuration settings in the code, such as default tip percentage or
 
 - Design and asset provided by [Frontend Mentor](https://www.frontendmentor.io).
 
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
 ## Contact
 
 If you have any questions or suggestions, feel free to reach out to [darkx.dev.23@gmail.com].
